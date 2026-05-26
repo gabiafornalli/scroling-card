@@ -1,0 +1,55 @@
+h3{
+    font-size: 30px; /* Tamanho grande para o título */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    margin: 25px; /* Margem ao redor do título */
+}
+
+/* Estilização do parágrafo dentro do conteúdo */
+p{
+    width: 80%; /* Largura interna do texto */
+    margin: 10px auto; /* Margem automática para centralizar */
+    font-size: 18px; /* Fonte legível */
+    transition: 0.5s; /* Transição suave */
+    opacity: 0; /* Inicialmente invisível */
+}
+
+/* Estilização do link */
+a{
+    text-decoration: none; /* Remove sublinhado */
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover p,
+.card:hover a{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/* Caixa da imagem */
+.imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+/* Efeito na imagem */
+.card:hover img{
+    opacity: 0;
+}
